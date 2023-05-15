@@ -130,3 +130,85 @@ color: #40f4d4;
     }
 
 }
+
+@media (max-width: 720px) {
+    .wrapper {
+        max-width: 500px;
+        padding: 0;
+    }
+    .wrapper-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap:3px;
+        grid-row-gap: 12px;
+        max-height: 160px;
+        color: #40f4d4;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 205px;
+        height: 72px;
+        background-color: #FFFFFF;
+        /*margin:16px;*/
+        /*padding:0 16px;*/
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .wrapper-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap:3px;
+        grid-row-gap: 12px;
+        max-height: 160px;
+        color: #40f4d4;
+        overflow: hidden;
+        /*margin-bottom: 20px;*/
+        margin: 15px auto;
+    }
+
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+    body{background: #d7efe5}
+    
+}
+
+
+
+/*slider
+Swiper CSS Styles/Size
+*/
+
+.swiper {
+    width: 280px;
+    height: 240px;
+    overflow: hidden;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*width: 205px !important;*/
+    height: 72px;
+    background-color: #FFFFFF;
+    /*margin:16px;*/
+    /*padding:0 16px;*/
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+
+
